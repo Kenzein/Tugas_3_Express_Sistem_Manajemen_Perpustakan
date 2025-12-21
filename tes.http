@@ -1,0 +1,52 @@
+@host = http://localhost:3031
+
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "Agus",
+  "password": "admin123"
+}
+
+###
+GET {{host}}/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+
+
+###
+POST  {{host}}/buku
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+Content-Type: application/json
+
+{
+  "judul": "Clean Code",
+  "penulis": "Robert C. Martin",
+  "penerbit": "Prentice Hall",
+  "tahun": "2008",
+  "stok": 5
+}
+
+###
+GET {{host}}/buku
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+
+###
+GET {{host}}/buku/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+
+###
+PUT {{host}}/buku/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+Content-Type: application/json
+
+{
+  "judul": "Clean Code (Revised)",
+  "penulis": "Robert C. Martin",
+  "penerbit": "Pearson",
+  "tahun": 2010,
+  "stok": 10
+}
+
+###
+DELETE {{host}}/buku/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
