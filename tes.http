@@ -1,5 +1,26 @@
 @host = http://localhost:3031
 
+###
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "username": "Agus",
+  "password": "admin123",
+  "role": "0"
+}
+
+###
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "username": "Andi",
+  "password": "admin234",
+  "role": "0"
+}
+
+###
 POST {{host}}/auth/login
 Content-Type: application/json
 
@@ -10,12 +31,22 @@ Content-Type: application/json
 
 ###
 GET {{host}}/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
 
 
 ###
+DELETE {{host}}/users/2
+Authorization: Baarer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+
+Content-Type: application/json
+
+###
+GET {{host}}/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+
+###
 POST  {{host}}/buku
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
 Content-Type: application/json
 
 {
@@ -28,15 +59,15 @@ Content-Type: application/json
 
 ###
 GET {{host}}/buku
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
 
 ###
 GET {{host}}/buku/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
 
 ###
 PUT {{host}}/buku/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
 Content-Type: application/json
 
 {
@@ -49,4 +80,8 @@ Content-Type: application/json
 
 ###
 DELETE {{host}}/buku/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2MjUwNTcxLCJleHAiOjE3NjYyNTQxNzF9.k-Y7drJLAobxrlBYFoapTO8nRJ-TcYcSxt4r77mNyQo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+
+###
+GET {{host}}/buku
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
