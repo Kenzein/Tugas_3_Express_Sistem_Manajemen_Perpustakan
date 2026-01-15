@@ -1,4 +1,5 @@
 @host = http://localhost:3031
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY4NDk1MDc4LCJleHAiOjE3Njg0OTg2Nzh9._2RPAKXAMUCYQKkp1qDXKG_eBTEUQsFOGz8tPhh0hvE
 
 ###
 POST {{host}}/users
@@ -31,22 +32,22 @@ Content-Type: application/json
 
 ###
 GET {{host}}/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+Authorization: Bearer {{token}}
 
 
 ###
 DELETE {{host}}/users/2
-Authorization: Baarer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+Authorization: Baarer {{token}}
 
 Content-Type: application/json
 
 ###
 GET {{host}}/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+Authorization: Bearer {{token}}
 
 ###
 POST  {{host}}/buku
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
@@ -59,15 +60,15 @@ Content-Type: application/json
 
 ###
 GET {{host}}/buku
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+Authorization: Bearer {{token}}
 
 ###
 GET {{host}}/buku/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+Authorization: Bearer {{token}}
 
 ###
 PUT {{host}}/buku/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
@@ -80,8 +81,8 @@ Content-Type: application/json
 
 ###
 DELETE {{host}}/buku/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+Authorization: Bearer {{token}}
 
 ###
 GET {{host}}/buku
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJBZ3VzIiwiaWF0IjoxNzY2NDkyNDA3LCJleHAiOjE3NjY0OTYwMDd9.pQhOPCmXaEPNKewRfQqkuEa2WGb8M5Xxl3n7FSPVP18
+Authorization: Bearer {{token}}
