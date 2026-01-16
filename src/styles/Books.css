@@ -1,0 +1,129 @@
+/* ===== PAGE ===== */
+.books-page {
+  padding: 30px;
+  background: #f4f6fb;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== TITLE ===== */
+.books-page h2 {
+  margin-bottom: 20px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+/* Tambah Buku */
+.btn-add {
+  background: #4f46e5;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  background: #4338ca;
+}
+
+/* Edit */
+.btn-edit {
+  background: #22c55e;
+  color: white;
+}
+
+.btn-edit:hover {
+  transform: translateY(-2px);
+  background: #16a34a;
+}
+
+/* Hapus */
+.btn-delete {
+  background: #ef4444;
+  color: white;
+  margin-left: 5px;
+}
+
+.btn-delete:hover {
+  transform: translateY(-2px);
+  background: #dc2626;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+  background: #4f46e5;
+  color: white;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+}
+
+tbody tr {
+  transition: 0.2s ease;
+}
+
+tbody tr:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: #f9fafb;
+}
+
+/* ===== EDIT FORM ===== */
+.edit-form {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.edit-form h3 {
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+.edit-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.edit-form input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Form buttons */
+.edit-form button {
+  margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table {
+    font-size: 13px;
+  }
+}
